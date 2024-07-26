@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>geometricas</title>
+</head>
+
+<body>
+    <script>
+        function calculartriangulo() {
+            let baseTriangulo = parseFloat(prompt("digite a base do triangulo"))
+            let alturaTriangulo = parseFloat(prompt("digite a altura do triangulo"))
+            let areaTriangulo = (baseTriangulo * alturaTriangulo) / 2
+            window.alert("a area do triangulo é: " + areaTriangulo)
+        }
+        function calcularTrapezio() {
+            let baseMaiorTrapezio = parseFloat(prompt("digite a base maior do trapezio"))
+            let baseMenor = parseFloat(prompt("digite a base menor do trapezio"))
+            let alturaTrapezio = parseFloat(prompt("digite a altura do trapezio"))
+            let areaTrapezio = ((baseMaior + baseMenor) / 2) * alturaTrapezio
+            window.alert("a area do trapezio é: " + areaTrapezio)
+        }
+        function calcularcirculo() {
+            let raioCirculo = parseFloat(prompt("digite o raio do circulo"))
+            let areaCirculo = math.PI * raio ** 2
+            window.alert("a area do circulo é: " + areaCirculo)
+        }
+        function calcularquadrado() {
+            let ladoQuadrado = parseFloat(prompt("digite o valor do lado do quadrado"))
+            let areaQuadrado = ladoQuadrado * ladoQuadrado
+            window.alert("a area do quadrado é: " + areaQuadrado)
+        }
+        var figura = prompt("digite o tipo da figura geometrica (triangulo, trapezio, circulo, quadrado)")
+
+        switch (figura) {
+            case "triangulo":
+                calculartriangulo()
+                break;
+            case "trapezio":
+                calcularTrapezio()
+                break;
+            case "circulo":
+                calcularcirculo()
+                break;
+            case "quadrado":
+                calcularquadrado()
+                break;
+
+                window.alert("digite uma figura geometrica")
+                break;  
+
+            default:
+                window.alert("digite uma figura nao encontrada!. Tente Novamente")
+
+        }
+
+    </script>
+</body>
+
+</html>
