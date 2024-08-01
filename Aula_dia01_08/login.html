@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<body>
+    <form>
+        <h3>login</h3>
+        <input type="text" placeholder="digite seu login" id="login">
+        <h3>senha</h3>
+        <input type="password" placeholder="digite sua senha" id="senha">
+        <p></p>
+        <input type="submit" onclick="logar(); return false;" >
+    </form>
+
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+        
+        if (login == "Estevao" && senha == "2007") {
+            alert("login efetuado com sucesso!");
+        location.href= "https://github.com/estevaopmata"
+        }else{
+
+            alert("login incorreto ou senha incorreta"); 
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>

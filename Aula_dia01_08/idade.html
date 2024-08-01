@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade</title>
+</head>
+<body>
+    <form>
+        <h3>Nascimento</h3>
+        <input type="Nascimento" placeholder="digite sua data de nascimento" id="niver">
+        <h3>Ano Atual</h3>
+        <input type="AnoAtual" placeholder="digite Ano Atual" id="atual">
+        <p></p>
+        <input type="submit" onclick="Idade(); return false;" >
+        <button type="botton" onclik="voltar()">voltar</button>
+    </form>
+
+    <script>
+        function Idade() {
+            var niver = document.getElementById('niver').value;
+            var atual = document.getElementById('atual').value;
+            var idade = atual - niver;
+            alert("sua idade e: " + idade);
+
+           
+   
+    }
+    function voltar(){
+                location.href = "http://127.0.0.1:5500/Aula_dia01_08/Principal.html"
+            }
+    </script>
+
+</body>
+</html>

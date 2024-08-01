@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+
+<body>
+    <form>
+        <h3>Media</h3>
+        <input type="number" placeholder="digite sua Nota1" id="Nota1">
+        <input type="number" placeholder="digite sua Nota2" id="Nota2">
+        <p></p>
+        <input type="submit" onclick="media(); return false;">
+        <button type="botton" onclik="voltar()"></botton>voltar</button>
+    </form>
+<p id="media"></p>
+    <script>
+        function media() {
+            var Nota1 = parseFloat(document.getElementById('Nota1').value);
+
+            var Nota2 = parseFloat(document.getElementById('Nota2').value);
+
+    
+            var media = (Nota1 + Nota2) / 2;
+            document.getElementById('media').innerHTML = "sua media e: " + media;
+
+            
+            
+            location.href = "https://github.com/estevaopmata"
+        }
+        function voltar(){
+                location.href = "http://127.0.0.1:5500/Aula_dia01_08/Principal.html"
+            }
+
+    </script>
+</body>
+
+</html>
