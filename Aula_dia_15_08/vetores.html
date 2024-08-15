@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <form id="alunoForm">
+        <label for="nome">Aluno:</label> 
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="faltas">Faltas</label> 
+        <input type="number" id="faltas" name="faltas"><br><br>
+
+        <label for="media">Media</label> 
+        <input type="number" step="0.01" id="media" name="media"><br><br>
+
+        <button type="button" onclick="lerDadosAlunos()">Adicionar Alunos</button>
+    </form>
+
+    <div id="listagemAlunos"></div>
+
+    <script src="Vetor.js"></script>
+</body>
+</html>

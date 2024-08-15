@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>VETOR </title>
+</head>
+
+<body>
+    <script>
+        // Funçao para ler os dados de um aluno
+        let alunos = [];
+
+        // Função para ler os dados de um aluno
+
+        function lerDadosAlunos() {
+            let nome = prompt("digite o nome do aluno");
+            let faltas = parseInt(prompt("digite o numero de faltas"));
+            let media = parseFloat(prompt("digite a media"));
+            // criar um objeto com os dados do aluno
+            let aluno = {
+                nome: nome,
+                faltas: faltas,
+                media: media
+            };
+            // adiciona o aluno ao array OU VETOR
+            alunos.push(aluno);
+        }
+
+        //le os dados de 4 alunos
+        for (let i = 0; i < 4; i++) {
+            lerDadosAlunos();
+        }
+        // exibe a listagem de alunos
+
+        window.alert("listagem de alunos:");
+        for (let aluno of alunos) {
+            window.alert(`nome: ${aluno.nome} faltas: ${aluno.faltas} media: ${aluno.media}`);
+        }
+    </script>
+</body>
+
+</html>
