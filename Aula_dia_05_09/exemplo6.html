@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demonstracao"></p>
+    <script>
+        const idades = ["32", "33", "19", "40"]
+        function checkAges(idade) {
+            return idade > 18;
+        }
+        document.getElementById("demonstracao").innerHTML = "todos tem idade maior que 18 " + idades.every(checkAges);
+
+    </script>
+    </script>
+</body>
+
+</html>
